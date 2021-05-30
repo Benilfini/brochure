@@ -1,0 +1,125 @@
+.header {
+  
+  //Hamburger open styles
+   &.open {
+
+
+    .header__toggle {
+
+    > span:first-child {
+        transform: rotate(45deg);
+    }
+
+    > span:nth-child(2) {
+        opacity: 0;
+    }
+
+    > span:last-child {
+        transform: rotate(-45deg);
+    }
+   }
+  }
+
+    .overlay {
+        opacity: 0;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient(gray, transparent);
+    }
+
+    nav {
+        position: relative;
+        background-color: white;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+
+    &__logo {
+        font-family: 'Brush Script MT';
+        font-size: 60px;
+        color: #015200;
+        text-decoration: none;
+        padding-bottom: 3px;
+    }
+
+    &__toggle { //Mobile menu toggle
+
+        > span {
+            display: block;
+            width: 26px;
+            height: 2px;
+            background-color: gray;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+
+    }
+
+    &__menu {
+        position: absolute;
+        width: calc(100% - 48px);
+        left: 50%;
+        transform: translateX(-50%);
+        background: white;
+        margin-top: 24px;
+        padding: 26px;
+        border-radius: 5px;
+
+        a {
+            display: block;
+            padding: 10px;
+            color: gray;
+            text-align: center;
+        }
+    }
+
+    &__links {
+        a {
+            position: relative;
+            font-size: 20px;
+            color: rgb(92, 89, 89);
+            transition: color 300ms ease-in-out;
+
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -15px;
+                background: #015200;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                color: #015200;
+
+                &::before {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    &__tracker {
+        position: absolute;
+        top: 1px;
+        right: 5px;
+        font-size: 40px;
+        color: red;
+    }
+}

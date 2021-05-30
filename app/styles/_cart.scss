@@ -1,0 +1,54 @@
+.cart {
+    background-image: linear-gradient(to bottom, whitesmoke, rgba(145, 145, 145, 0.459));
+    color: darkslategray;
+    
+    
+    .container {
+        text-align: right;
+    }
+
+    &__title {
+        text-align: left;
+        padding: 20px;
+
+        h2 {
+            font-weight: bold;
+            font-size: 40px;
+            margin-top: 40px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+
+        @include breakpoint-up(medium) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        h4 {
+            padding: 10px;
+        }
+        input {
+            align-self: center;
+            width: 100px;
+            height: 50px;
+        }
+
+    }
+
+    &__row {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2px;
+        height: 175px;
+
+        span {
+            font-size: 25px;
+            font-weight: bold;
+        }
+       
+    }
+}

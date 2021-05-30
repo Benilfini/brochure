@@ -1,0 +1,75 @@
+{
+    "products":[{
+        "id": "1",
+        "name": "Chicken Soup",
+        "price": {
+          "current": 19.98
+        },
+        "description": "Flavorful stock, egg noodles, vegetables and chicken make this classic soup an all-time favorite."
+      },
+      {
+        "id": "2",
+        "name": "Grilled Chicken",
+        "price": {
+          "current": 29.98
+        },
+        "description": "Grilled chicken breast with a tangy tarragon blue cheese sauce served with grilled asparagus and a side of Jasmine rice."
+      },
+      {
+        "id": "3",
+        "name": "Grilled Salmon",
+        "price": {
+          "current": 39.99
+        },
+        "description": "Nothing beats a classic and this Teriyaki Glazed Salmon is no exception. This salmon is roasted and packed with flavor, making it a great option for a simple weeknight meal."
+      },
+      {
+        "id": "4",
+        "name": "Chickpea Salad",
+        "price": {
+          "current": 9.98
+        },
+        "description": "Chickpea Salad is rich with crisp cucumbers, juicy tomatoes, creamy avocado and feta cheese. The fresh lemon dressing adds the Mediterranean flavors of classic Greek Salad."
+      },
+      {
+        "id": "5",
+        "name": "Fruit Salad",
+        "price": {
+          "current": 9.98
+        },
+        "description": "A sweet mixture of various fruits in a thick sweet cream."
+      },
+      {
+        "id": "6",
+        "name": "Caesar Salad",
+        "price": {
+          "current": 5.98
+        },
+        "description": "Fresh chopped romaine lettuce and red onion rings topped with a Greek Caesar dressing that is Caesar with tomato, cucumber and feta cheese."
+      },
+      {
+        "id": "7",
+        "name": "Lemon Cake",
+        "price": {
+          "current": 10.98
+        },
+        "description": "When the cake comes out of the oven it is infused with a homemade lemon syrup to give it an extra lemon kick, and then after cooling down the cake is topped with the most delicious lemon glaze"
+      },
+      {
+        "id": "8",
+        "name": "Cheesecake",
+        "price": {
+          "current": 10.98
+        },
+        "description": "A rich and creamy New York-style cheesecake baked inside a honey-graham crust. Try with sweet strawberries in strawberry sauce, or with blueberry toppings for an additional charge."
+      },
+      {
+        "id": "9",
+        "name": "Snickers Pie",
+        "price": {
+          "current": 10.98
+        },
+        "description": "Snickers pie is a chocolate dessert made with Snickers bars, mascarpone and soft cheese."
+      }
+    ]
+}

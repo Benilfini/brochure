@@ -1,0 +1,36 @@
+<header class="header {{if this.isOpen 'open'}}">
+  <div class="overlay has-fade {{if this.isOpen 'fade-in' 'fade-out'}}"></div>
+
+   <nav class="container container--pall flex flex-jc-sb flex-ai-c">
+     <LinkTo @route="index" class="header__logo">Benilfini's</LinkTo>
+     
+     <a href="#"  class="header__toggle hide-for-desktop" {{on "click" this.open}}> 
+       <span></span>
+       <span></span>
+       <span></span>
+     </a>
+
+     <div class="header__links hide-for-mobile">
+      <LinkTo @route="index">Home</LinkTo>
+      <LinkTo @route="menu">Menu</LinkTo>
+      <LinkTo @route="about">About</LinkTo>
+      <LinkTo @route="contact">Contact</LinkTo>
+     </div>
+
+     <LinkTo @route="cart" class="button header__cta hide-for-mobile">Order Now! 
+     {{#if this.shoppingCart.itemList.length}}
+     <span class="header__tracker">
+       {{this.itemCount}}
+     </span>
+     {{/if}}
+     </LinkTo>
+   </nav>
+
+   <div class="header__menu has-fade {{if this.isOpen 'fade-in' 'fade-out'}}">
+    <LinkTo @route="index">Home</LinkTo>
+    <LinkTo @route="menu">Menu</LinkTo>
+    <LinkTo @route="about">About</LinkTo>
+    <LinkTo @route="contact">Contact</LinkTo>
+   </div>
+
+</header>

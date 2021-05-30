@@ -1,0 +1,56 @@
+.contact {
+    background-image: linear-gradient(to bottom, whitesmoke, rgba(145, 145, 145, 0.459));
+
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px;
+        height: 681px;
+
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        h2 {
+            font-size: 50px;
+            font-weight: 600;
+        }
+    }
+
+    &__info {
+        text-align: center;
+        align-self: center;
+        color: darkslategray;
+               
+        h2 {
+            padding-bottom: 20px;
+        }
+        p {
+            
+        }
+        a {
+            color: darkslategray;
+            transition: all 200ms ease-in-out;
+
+            &:hover {
+                font-weight: bold;
+                font-size: 22px;
+            }
+        }
+    }
+
+    &__hours {
+        align-self: center;
+        width: 300px;
+        color: darkslategray;     
+
+        h2 {
+            margin-top: -60px;
+            padding-bottom: 20px;
+        }
+        p {
+            margin-left: 30px;
+        }
+    }
+}

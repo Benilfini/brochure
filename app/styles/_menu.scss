@@ -1,0 +1,59 @@
+.menu {
+    background-color: rgba(47, 79, 79, 0.15);
+    text-align: center;
+    padding: 80px;
+    color: rgba(47, 79, 79, 0.726);
+    min-height: 100vh;
+    font-family: 'Tangerine', cursive;
+    font-size: 40px;
+
+    @include breakpoint-down(medium) {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 55px;
+    }
+
+    a {
+        color: black;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+            font-weight: bold;
+            font-size: 45px;
+        }
+    }
+
+    .container {
+        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.35);
+        background-color: #E6E4D8;
+        max-width: 900px;
+        min-height: 100vh;
+    }
+
+    &__title {
+        padding-top: 100px;
+        margin-bottom: 80px;
+
+        h2 {
+            font-size: 70px;
+            font-weight: bold;
+        }
+    }
+
+    &__entree {
+        margin-bottom: 60px;
+        color: black;
+    }
+
+    &__salad {
+        margin-bottom: 60px;
+        color: black;
+    }
+
+    &__dessert {
+        padding-bottom: 60px;
+        color: black;
+    }
+}

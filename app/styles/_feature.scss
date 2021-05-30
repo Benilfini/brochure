@@ -1,0 +1,72 @@
+.feature {
+
+    &__intro {
+        margin-bottom: 60px;
+
+        @include breakpoint-up(large) {
+            width: 35%;
+        }
+    }
+
+    &__grid {
+
+        @include breakpoint-up(large) {
+            display: flex;
+        }
+    }
+
+    &__item {
+
+        padding: 10px;
+        @include breakpoint-up(large) {
+            flex: 1;
+        }
+    }
+
+    &__image1 {
+        background-image: url('../images/img4.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        min-height: 300px;
+
+        @include breakpoint-up(large) {
+            height: 650px;
+        }
+    
+    }
+
+    &__image2 {
+        background-image: url('../images/yes.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        min-height: 300px;
+
+        @include breakpoint-up(large) {
+            height: 650px;
+        }
+    
+    }
+
+    &__image3 {
+        background-image: url('../images/img3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        min-height: 300px;
+
+        @include breakpoint-up(large) {
+            height: 650px;
+        }
+    
+    }
+}
+
+.safe {
+    background-image: linear-gradient(to bottom, whitesmoke, rgb(145, 145, 145));
+
+    @include breakpoint-up(large) {
+        background-image: linear-gradient(to bottom right, whitesmoke, rgb(145, 145, 145));
+    }
+}

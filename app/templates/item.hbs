@@ -1,0 +1,18 @@
+<div class="items">
+
+<h1>{{@this.model.name}}</h1>
+<h2>{{currency @this.model.price.current}}</h2>
+
+<div class="items__holder">
+
+    <div class="items__image{{this.model.id}}"></div>
+    <div class="items__text">{{@this.model.description}}</div>
+    <Item
+    @name={{this.model.name}}
+    @price={{this.model.price.current}}/>
+    
+</div>
+
+
+</div>
+

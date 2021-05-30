@@ -1,0 +1,209 @@
+.items {
+    background-image: linear-gradient(to bottom, whitesmoke, rgba(145, 145, 145, 0.459));
+
+    &__holder {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 25px;
+
+        @include breakpoint-up(large) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+&__image1 {
+    background-image: url(../images/ch-soup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(large) {
+        height: 650px;
+        width: 430px;
+    }
+}
+
+&__image2 {
+    background-image: url(../images/gr-chicken.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(large) {
+        height: 650px;
+        width: 430px;
+    }
+}
+
+&__image3 {
+    background-image: url(../images/gr-salmon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(large) {
+        height: 650px;
+        width: 430px;
+    }
+}
+
+&__image4 {
+    background-image: url(../images/chickpea.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(large) {
+        height: 650px;
+        width: 430px;
+    }
+}
+
+&__image5 {
+    background-image: url(../images/fruit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(large) {
+        height: 650px;
+        width: 430px;
+    }
+}
+
+&__image6 {
+    background-image: url(../images/caesar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(large) {
+        height: 650px;
+        width: 430px;
+    }
+}
+
+&__image7 {
+    background-image: url(../images/lemon.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(large) {
+        height: 650px;
+        width: 430px;
+    }
+}
+
+&__image8 {
+    background-image: url(../images/cheesecake.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(large) {
+        height: 650px;
+        width: 430px;
+    }
+}
+
+&__image9 {
+    background-image: url(../images/snickers-pie.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(large) {
+        height: 650px;
+        width: 430px;
+    }
+}
+
+&__text {
+    align-self: flex-start;
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-family: 'Tangerine', cursive;
+    font-size: 55px;
+    font-weight: 590;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.25);
+    width: 325px;
+    margin-bottom: 40px;
+
+    @include breakpoint-up(large) {
+        width: 520px;
+    }
+}
+
+&__cta {
+    padding: 20px;
+
+    @include breakpoint-up(large) {
+        padding: 0;
+    }
+}
+
+h1,h2 {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+}
